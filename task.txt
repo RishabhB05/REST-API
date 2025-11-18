@@ -1,14 +1,18 @@
 REST - API
+-- it is basically a hybrid server which can be accessed by both mobile and pc
 
 GET /users - HTML Document Render
 GET /api/users - List all users JSON - Document
 
+
 GET /api/users/1 - Get the user with ID 1
 GET /users/2 - Get the user with ID 2
+
 
 POST /users - Create new user 
 
 PATCH /users/1 - Edit the user with ID 1 
 
 DELETE /users/1 - Delete the User with ID 1
+
 
