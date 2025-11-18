@@ -54,8 +54,9 @@ app.route('/api/users/:id')
   //TASK 1: - when new request come write the details in mock_data.json file
  app.post('/api/users', (req, res)=>{
    const body = req.body;
+   users.push({...body , id: users.length + 1});
    
-   fs.writeFile('MOCK_DATA.json', JSON.stringify(body) , (err, data)=>{
+   fs.writeFile('MOCK_DATA.json', JSON.stringify(users) , (err, data)=>{
      if (err) {
          console.error('Error writing file:', err);
          return res.status(500).json({message: 'Failed to save data'});
